@@ -1,0 +1,30 @@
+package javaoops;
+class X  // X: parent
+{
+		
+	void show()
+	{
+		System.out.println("Parent class, show method is executed");
+	}
+}
+class Y extends X  // Y:child
+{
+	
+	@Override
+	void show()
+	{   
+	    super.show();
+		System.out.println("Child class, show method is executed");
+	}
+}
+
+public class SuperKeywordToAccessParentClassMethod {
+
+	public static void main(String[] args) {
+		Y obj =new Y();
+		obj.show();
+		
+		
+	}
+
+}
